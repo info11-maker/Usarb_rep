@@ -1,0 +1,28 @@
+{
+    "name": "John Doe",
+    "email": "john.doe@gmail.com",
+    "phone": "555-1212",
+    "item": [
+        {
+            "img": "/assets/img/usarblogo.png",
+            "width" : "50px"
+            
+        },
+        {
+            "img": "/assets/img/phone.png",
+            "text":"+373 231 52430",
+            "width" : "20px"
+        },
+        {
+            "menu": "Despre",
+            "items":[
+                "list1",
+                "list2"
+            ]
+        },
+        "Studii",
+        "Facultati",
+        "Subdeviziuni",
+        "anticamera@usarb.md"
+    ]
+}
