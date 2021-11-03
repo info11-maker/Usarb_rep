@@ -2,27 +2,73 @@
     "name": "John Doe",
     "email": "john.doe@gmail.com",
     "phone": "555-1212",
-    "item": [
+    "item": [ 
         {
             "img": "/assets/img/usarblogo.png",
-            "width" : "50px"
+            "width" : "90px"
             
         },
         {
-            "img": "/assets/img/phone.png",
-            "text":"+373 231 52430",
-            "width" : "20px"
+            "menu": "Despre",
+            "items":[
+                {
+                    "level1": "complex",
+                    "items": [
+                        "Mesajul Rectorului",
+                        "Istoria",
+                        "Organigrama"
+                        
+                    ],
+                    "header" : "Despre Universitate"
+                },
+                {
+                    "level1": "complex",
+                    "items": [
+                        "Administratia",
+                        "Senat",
+                        "Consiliul"
+                    ],
+                    "header" : "Despre Universitate"
+                }
+                
+
+        ]
+            
         },
         {
-            "menu": "Despre",
+            "menu": "Studii",
             "items":[
                 "list1",
                 "list2"
             ]
         },
-        "Studii",
-        "Facultati",
-        "Subdeviziuni",
-        "anticamera@usarb.md"
+        {
+            "menu": "Facultati",
+            "items":[
+                "list1",
+                "list2"
+            ]
+        },
+        {
+            "menu": "Subdeviziuni",
+            "items":[
+                "list1",
+                "list2"
+            ]
+        },
+        {
+            "img": "/assets/img/phone.png",
+            "text":"+373 231 52430",
+            "width" : "15px",
+            "margin-top": "15px",
+            "margin": "0"
+        },
+        {
+            "img": "/assets/img/email.png",
+            "text": "anticamera@usarb.md",
+            "width" : "18px",
+            "margin-top": "15px",
+            "margin": "3x"
+        }
     ]
 }
