@@ -1,0 +1,255 @@
+<div class="topheader">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+            {{#each contact.item}}
+                {{#if this.img}}
+                    <li><img src="{{this.img}}" style="width:{{this.width}}"> {{ this.text}}</li>
+                {{else}}
+                    {{#if this.menu}}
+                    <li>
+                        <ul class="dropdown menu" data-dropdown-menu>
+                            <li>
+                                <a href="#">{{this.menu}}</a>
+                                <ul class="menu">
+                                    {{#each this.items}}
+                                    <li><a href="#">{{this}}</a></li>
+                                    {{/each}}
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    {{else}}
+                    <li>{{ this }}</li>
+                    {{/if}}
+                {{/if}}
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+<div class="topsr">
+    <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+            <div class="cell medium-2">
+                <div class="btn-menu">
+                    <button type="button" class="button" data-toggle="offCanvas">USARB</button>
+                    <!--<img src="/assets/img/usarblogo.png" class="logo" alt="" srcset="">-->
+                </div>
+            </div>
+            <div class="cell medium-4">
+                <form>
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="small-2 large-2 columns">
+                <div class="csrt">
+                    <a href="https://www.facebook.com/usarb.balti" target="_blank"><i
+                            class="fab fa-facebook-square fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="small-3 large-2 columns">
+                <div class="csrt">
+                    <a href="https://instagram.com/usarb.md" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+            <div class="small-2 large-2 columns">
+                <div class="csrt">
+                    <a href="https://instagram.com/usarb.md" target="_blank" class="youtube"><i
+                            class="fab fa-youtube fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="cell medium-1">
+        <div class="csrt">
+       <a href="https://www.facebook.com/usarb.balti" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+        </div>
+      </div>
+      <div class="cell medium-1">
+        <div class="csrt">
+          <a href="https://instagram.com/usarb.md" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
+      <div class="cell medium-1">
+        <div class="csrt">
+          <a href="https://instagram.com/usarb.md" target="_blank" class="youtube"><i class="fab fa-youtube fa-2x"></i></a>
+      </div>
+      </div>
+      </div>-->
+    </div>
+</div>
+</div>
+
+<img src="/assets/img/mainphoto.png" class="usarbphoto" alt="">
+
+<!--<nav>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x" id="menu">
+      {{#each contact.smenu}}
+      <li> <img src="/assets/img/iconm.png" class="df" >&nbsp; &nbsp;<a href="#">{{ this }}</a></li>
+      {{/each}}
+      <div class="grid-x grid-margin-x" id="menu">
+    </div>
+  </div>
+</nav>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<header id="header">
+  <div class="row">
+    <div class="columns">
+<div class="top-bar stacked-for-medium" id="example-menu">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text">Universitatea de Stat "Alecu Russo" din Balti</li>
+        <div class="top-bar-center">
+          <ul class="dropdown menu" data-dropdown-menu>
+            <li>
+              <a href="#Item-1">Despre</a>
+              <ul class="menu">
+                <li><a href="#Item-1A">Despre Universitate</a>
+                  <ul class="menu">
+                    <li><a href="#Item-1Biiialpha">Mesajul rectorului</a></li>
+                    <li><a href="#Item-1Biiiomega">Istoria</a></li>
+                    <li><a href="#Item-1Biiiomega">Organigrama</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#Item-1B">Structuri Universitare</a>
+                  <ul class="menu">
+                    <li><a href="#Item-1Bi">Administratia</a></li>
+                    <li><a href="#Item-1Bii">Senat</a></li>
+                    <li>
+                      <a href="#Item-1Biii">Consiliul pentru Dezvoltare Strategica Institutionala</a>
+                      <ul class="menu">
+                        <li><a href="#Item-1Biiialpha">Membri</a></li>
+                        <li><a href="#Item-1Biiiomega">Acte Normative</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#Item-15">Consiliul stiintific</a>
+                      <ul class="menu">
+                        <li><a href="#Item-1Bivalpha">Membri</a></li>
+                        <li><a href="#Item-1Bivalpha">Acte emise</a></li>
+                        <li><a href="#Item-1Bivalpha">Evenimente</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#Item-1Biv">Consiliul calitatii</a>
+                      <ul class="menu">
+                        <li><a href="#Item-1Bivalpha">Componenta nominala a Consiliului calitatii</a></li>
+                        <li><a href="#Item-1Bivalpha">Program de activitate</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#Item-1C">Acte normative</a>
+                <ul class="menu">
+                  <li><a href="#Item-1Bivalpha">Componenta nominala a Consiliului calitatii</a></li>
+                  <li><a href="#Item-1Bivalpha">Program de activitate</a></li>
+                </ul>
+              </li>
+              <li><a href="#Item-1C">Achizitii publice</a>
+            <li><a href="#Item-">Rapoarte</a>
+            <ul class="menu">
+              <li><a href="#Item-1Bivalpha">Situatii financiare</a></li>
+              <li><a href="#Item-1Bivalpha">Rapoarte de activitate</a></li>
+              <li><a href="#Item-1Bivalpha">Raportul anual CIM</a></li>
+            </ul>
+          </li>
+          <li><a href="#Item-1C">Acte normative</a>
+          </ul>
+          </li>
+            <li>
+              <a href="#Item-2">Studii</a>
+              <ul class="menu">
+                <li><a href="#Item-2A">Programul procesului de invatamant</a>
+                    <ul class="menu">
+                      <li><a href="#Item-1Bivalpha">Programul procesului de invatamant pentru anul universitar 2021-2022,ciclul I, II si III (studii superioare de licenta, master, doctorat),invatamant cu frecventa(termini generali)</a></li>
+                      <li><a href="#Item-1Bivalpha">Programul procesului de invatamant pentru anul universitar 2021-2022,ciclul I, II si III (studii superioare de licenta, master, doctorat),invatamant cu frecventa redusa(termini generali)</a></li>
+                    </ul>
+                  <li><a href="#Item-3">Absolventi</a>
+                    <ul class="menu">
+                      <li><a href="#Item-1Bivalpha">Informare</a></li>
+                      <li><a href="#Item-1Bivalpha">Repartizarea absolvenților programelor de studii acreditate în domeniul Educație/Științe ale educației</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Item-3">Licenta</a>
+                  <ul class="menu">
+                    <li><a href="#Item-1Bivalpha">Invatamant cu frecventa</a>
+                      <ul class="menu">
+                        <li><a href="#Item-1Bivalpha">Programe de licenta</a></li>
+                        <li><a href="#Item-1Bivalpha">Sesiune si Grafice</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#Item-1Bivalpha">Invatamant cu frecventa redusa</a>
+                      <ul class="menu">
+                        <li><a href="#Item-1Bivalpha">Programe de frecventa redusa</a></li>
+                        <li><a href="#Item-1Bivalpha">Sesiune si Grafice</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <li><a href="#Item-3">Master</a>
+                    <ul class="menu">
+                      <li><a href="#Item-1Bivalpha">Programe de master</a></li>
+                      <li><a href="#Item-1Bivalpha">Sesiune si Grafice</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Item-3">Doctorat</a>
+                  <ul class="menu">
+                    <li><a href="#Item-1Bivalpha">Consiliul stiintific</a>
+                    <ul class="menu">
+                      <li><a href="#Item-1Bivalpha">Acte emise</a></li>
+                      <li><a href="#Item-1Bivalpha">Evenimente</a></li>
+                    </ul>
+                  </li>
+                    <li><a href="#Item-1Bivalpha">Scoli doctorale / Consortii</a></li>
+                    <li><a href="#Item-1Bivalpha">Conducatori de doctorat</a></li>
+                    <li><a href="#Item-1Bivalpha">Seminarele stiintifice de profil</a></li>
+                  </ul>
+              </ul>
+            </li>
+            <li><a href="#Item-3">Item 3</a></li>
+            <li><a href="#Item-4">Item 4</a></li>
+          </ul>
+          </div>
+        <div class="top-bar-right">
+        <li class="menu-text"><img src="https://cdn-icons-png.flaticon.com/512/2934/2934394.png" class="header-logo" alt="">+373 231 52430</li>
+        <li class="menu-text"><img src="https://cdn-icons-png.flaticon.com/512/95/95645.png" class="header-logo" alt="">anticamera@usarb.md</li>
+      </ul>
+    </div>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><input type="search" placeholder="Search"></li>
+        <li><button type="button" class="button">Search</button></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</header>-->
