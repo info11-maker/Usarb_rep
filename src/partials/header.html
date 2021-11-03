@@ -3,7 +3,7 @@
         <div class="grid-x grid-margin-x">
             {{#each contact.item}}
                 {{#if this.img}}
-                    <li><img src="{{this.img}}" style="width:{{this.width}}"> {{ this.text}}</li>
+                    <li style="margin-top:{{this.margin-top}}"><img src="{{this.img}}" style="width:{{this.width}}; margin-top:{{this.margin}}" id="logousarb"> {{this.text}} </li>
                 {{else}}
                     {{#if this.menu}}
                     <li>
@@ -12,14 +12,21 @@
                                 <a href="#">{{this.menu}}</a>
                                 <ul class="menu">
                                     {{#each this.items}}
-                                    <li><a href="#">{{this}}</a></li>
+                                      {{#if this.level1}}
+                                      <li><a href="#">{{this.header}}</a></li>
+                                      {{#each this.items}}
+                                      <p class="level1">{{this}}</p>
+                                      {{/each}}
+                                      {{else}}
+                                      <li><a href="#">{{this}}</a></li>
+                                      {{/if}}
                                     {{/each}}
                                 </ul>
                             </li>
                         </ul>
                     </li>
                     {{else}}
-                    <li>{{ this }}</li>
+                    <li>{{ this}}</li>
                     {{/if}}
                 {{/if}}
             {{/each}}
@@ -56,33 +63,48 @@
             </div>
             <div class="small-2 large-2 columns">
                 <div class="csrt">
-                    <a href="https://instagram.com/usarb.md" target="_blank" class="youtube"><i
+                    <a href="https://www.youtube.com/channel/UC1s0JOdKAC_26tswxf7wZCQ" target="_blank" class="youtube"><i
                             class="fab fa-youtube fa-2x"></i></a>
                 </div>
             </div>
         </div>
-
-        <!--<div class="cell medium-1">
-        <div class="csrt">
-       <a href="https://www.facebook.com/usarb.balti" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
-        </div>
-      </div>
-      <div class="cell medium-1">
-        <div class="csrt">
-          <a href="https://instagram.com/usarb.md" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-      </div>
-      <div class="cell medium-1">
-        <div class="csrt">
-          <a href="https://instagram.com/usarb.md" target="_blank" class="youtube"><i class="fab fa-youtube fa-2x"></i></a>
-      </div>
-      </div>
-      </div>-->
     </div>
 </div>
 </div>
 
 <img src="/assets/img/mainphoto.png" class="usarbphoto" alt="">
 
+<div class="grid-container">
+  <div class="grid-x grid-margin-x small-up-2 medium-up-3">
+    <div class="cell">
+      <div class="card">
+        <img src="assets/img/mainphoto.png">
+        <div class="card-section">
+        <h4>This is a row of cards.</h4>
+          <p>This row of cards is embedded in an X-Y Block Grid.</p>
+        </div>
+      </div>
+    </div>
+    <div class="cell">
+      <div class="card">
+        <img src="assets/img/generic/rectangle-1.jpg">
+        <div class="card-section">
+          <h4>This is a card.</h4>
+          <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        </div>
+      </div>
+    </div>
+    <div class="cell">
+      <div class="card">
+        <img src="assets/img/generic/rectangle-1.jpg">
+        <div class="card-section">
+          <h4>This is a card.</h4>
+          <p>It has an easy to override visual style, and is appropriately subdued.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!--<nav>
   <div class="grid-container">
     <div class="grid-x grid-margin-x" id="menu">
