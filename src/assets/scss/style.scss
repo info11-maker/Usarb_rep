@@ -51,20 +51,18 @@ FONTS
 /* HEADER */
 .topheader {
     background-color: #ffffff;
-    color: #898b8a;
+    color: #4f5255;
     font-size: 15px;
 }
 
 .topheader>ul {
     list-style: none;
-
 }
 
 .topheader li {
     display: inline;
-    padding: 0.25rem 1.75rem;
+    padding: 0.5rem 1rem;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 .topsr {
@@ -74,78 +72,27 @@ FONTS
 
 .csrt {
     font-family: 'Montserrat', sans-serif;
-    color: #888a89;
+    color: #585858;
     font-size: 0.9rem;
     margin-left: 2%;
 }
 
-.phonec {
-    color: #575757;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-
-}
-
-.phonec1 {
-    color: #575757;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.8rem;
-
-}
-
-.kk {
-    font-family: 'Varela Round', sans-serif;
-    text-transform: uppercase;
-}
-
 /*___________________________________________*/
-/* MENU*/
-nav {
-    background-color:$navcol;
-    height: 50px;
 
-}
-
-#menu {
-
-    list-style: none;
-    -ms-box-orient: horizontal;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#menu>li {
-    flex: 1;
-    @include btsit;
-}
 #menu>li>a{
     font-family: 'Montserrat', sans-serif;
-    color:white;
+    color:rgb(179, 103, 103);
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: bolder;
 }
 
-.sdmenu>li{
-    list-style: none;
-    @include sdmn;
-}
 /*____________________________________________*/
-.logo{
-    width: 120px;
-    margin-left: 15px;
-    margin-top: -15px;
-}
+
 .usarbphoto{
     margin-top:-5px;
     width: 1500px;
+    height: 550px;
 }
 form input[type=text]{
     border-radius: 15px;
@@ -158,6 +105,7 @@ form button {
     margin-top: -45px;
     margin-right: -55px;
     cursor: pointer;
+    color: rgb(102, 100, 100);
   }
 
 .csrt a i {
@@ -167,7 +115,7 @@ form button {
 
 }
 #offCanvas{
-    margin-top: 110px;
+    margin-top: 150px;
     width: 1410px;
     margin-left: 15px;
 }
@@ -184,12 +132,39 @@ line-height: 3;
 
 .vertline {
     border-left: 2px solid rgb(96, 100, 96);
-    height: 630px;
+    height: 590px;
     margin-left: 200px;
     margin-top:-350px;
   }
+#logousarb{
+    margin-left: 5px;
+}
+.card{
+    margin-top: 30px;
+}
 
+.level1 a{
+    display: block;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+.dropbtn{
+    margin-left: 180px;
+    padding: 0 16px;
+}
+.dropdown .is-dropdown-submenu a {
+    margin-top: -70px;
+    line-height: 50px;
+}
+.level1 a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .dropdown:hover .level1 {
+    display: block;
+  }
 
+  
 @media screen and (max-width: 500px) {
     form input[type=text]{
       float: none;
@@ -204,6 +179,7 @@ line-height: 3;
     }
   }
 
+  
   
 /*#header {
     padding: 10px 0;
