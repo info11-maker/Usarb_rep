@@ -9,13 +9,17 @@
                     <li>
                         <ul class="dropdown menu" data-dropdown-menu>
                             <li>
-                                <a href="#">{{this.menu}}</a>
+                                <a href="#"> {{this.menu}} </a> 
                                 <ul class="menu">
                                     {{#each this.items}}
                                       {{#if this.level1}}
+                                      <button class="dropbtn">
+                                        <i class="fa fa-caret-down"></i>
+                                      </button>
                                       <li><a href="#">{{this.header}}</a></li>
                                       {{#each this.items}}
-                                      <p class="level1">{{this}}</p>
+                                      <p class="level1"><a href="#">{{this}}</a></p>
+                                      
                                       {{/each}}
                                       {{else}}
                                       <li><a href="#">{{this}}</a></li>
