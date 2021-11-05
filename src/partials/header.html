@@ -7,19 +7,19 @@
                 {{else}}
                     {{#if this.menu}}
                     <li>
-                        <ul class="dropdown menu" data-dropdown-menu>
+                        <ul class="dropdown menu"  data-dropdown-menu>
                             <li>
                                 <a href="#"> {{this.menu}} </a> 
                                 <ul class="menu">
                                     {{#each this.items}}
-                                      {{#if this.level1}}
+                                    <p style="margin-top:{{this.top-margin}}">
+                                      {{#if this.level1}}</p>
                                       <button class="dropbtn">
                                         <i class="fa fa-caret-down"></i>
                                       </button>
                                       <li><a href="#">{{this.header}}</a></li>
                                       {{#each this.items}}
                                       <p class="level1"><a href="#">{{this}}</a></p>
-                                      
                                       {{/each}}
                                       {{else}}
                                       <li><a href="#">{{this}}</a></li>
@@ -76,7 +76,11 @@
 </div>
 </div>
 
-<img src="/assets/img/mainphoto.png" class="usarbphoto" alt="">
+
+      <img src="/assets/img/mainphoto.png" class="usarbphoto" alt="">
+    </div>
+  </div>
+</div>
 
 <div class="grid-container">
   <div class="grid-x grid-margin-x small-up-2 medium-up-3">
