@@ -10,6 +10,7 @@
         },
         {
             "menu": "Despre",
+            
             "items":[
                 {
                     "level1": "complex",
@@ -17,7 +18,6 @@
                         "Mesajul Rectorului",
                         "Istoria",
                         "Organigrama"
-                        
                     ],
                     "header" : "Despre Universitate"
                 },
@@ -26,36 +26,192 @@
                     "items": [
                         "Administratia",
                         "Senat",
-                        "Consiliul"
+                        "Consiliul pentru Dezvoltare Strategica Instutionala",
+                        "Consiliul stiintific",
+                        "Consiliul calitatii"
                     ],
-                    "header" : "Despre Universitate"
+                    "header" : "Structuri Universitare",
+                    "top-margin" : "-20px"
+                },
+                {
+                    "level1": "complex",
+                    "items": [
+                        "Acte normative cu aplicabilitate interna",
+                        "Acte normative cu aplicabilitate nationala",
+                        "Acte Europene"
+                    ],
+                    "header" : "Acte normative",
+                    "top-margin" : "-20px"
+                },
+                {
+                    "level1": "complex",
+                    "header" : "Achitizii publice",
+                    "top-margin" : "-20px"
+                },
+                {
+                    "level1": "complex",
+                    "items": [
+                        "Situatii financiare",
+                        "Rapoarte de activitate",
+                        "Raportul anual CIM"
+                    ],
+                    "header" : "Rapoarte",
+                    "top-margin" : "-40px"
+                },
+                {
+                    "level1" : "complex",
+                    "header" : "Deplasari de serviciu in strainatate",
+                    "top-margin" : "-20px"
                 }
-                
-
-        ]
-            
-        },
+        ]},
         {
             "menu": "Studii",
             "items":[
-                "list1",
-                "list2"
-            ]
+                {
+                    "level1": "complex",
+                    "items": [
+                        "Programul procesului de învățământ pentru anul universitar 2021-2022, ciclul I, II și III (studii superioare de licență, master, doctorat), învățământ cu frecvență (termeni generali)",
+                        "Programul procesului de învățământ pentru anul universitar 2021-2022, ciclul I, II și III (studii superioare de licență, master, doctorat), învățământ cu frecvență redusa"
+                    ],
+                    "header" : "Programul procesului de învățământ"
         },
+        {
+            "level1": "complex",
+                    "items": [
+                        "Informare",
+                        "Repartizarea absolvenților programelor de studii acreditate în domeniul Educație/Științe ale educației"           ],
+                    "header" : "Absolventi",
+                    "top-margin" : "-20px"
+        },
+        {
+            "level1": "complex",
+                    "items": [
+                        "Invatamant cu frecventa",
+                        "Invatamant cu frecventa redusa"           
+                    ],
+                    "header" : "Licenta",
+                    "top-margin" : "-20px"
+        },
+        {
+            "level1": "complex",
+                    "items": [
+                        "Programe de master",
+                        "Sesiune si grafice"           
+                    ],
+                    "header" : "Master",
+                    "top-margin" : "-20px"
+        },
+        {
+            "level1": "complex",
+                    "items": [
+                        "Consiliul stiintific",
+                        "Scoli doctorale/ Consortii",
+                        "Conducatori de doctorat",
+                        "Seminarele stiintifice de profil"           
+                    ],
+                    "header" : "Doctorat",
+                    "top-margin" : "-20px"
+        },
+        {
+            "level1": "complex",
+                    "items": [
+                        "Centrul Activitate didactica",
+                        "Centrul de formare profesionala continua",
+                        "Centrul de ghidare in cariera si relatii cu piata muncii"      
+                    ],
+                    "header" : "Centre",
+                    "top-margin" : "-20px"
+        },
+        {
+            "level1": "simple",
+            "header" : "Servicii de arhiva",
+            "top-margin" : "-20px"
+        }
+            
+        ]},
         {
             "menu": "Facultati",
             "items":[
-                "list1",
-                "list2"
-            ]
+                {
+                    "level1": "complex",
+                    "items": [
+                        "Admitere 2020",
+                        "Avize si noutati",
+                        "Acte normative",
+                        "Studii",
+                        "Decanat",
+                        "Catedre",
+                        "Centre"
+                    ],
+                    "header" : "Facultatea de Litere"
         },
         {
-            "menu": "Subdeviziuni",
-            "items":[
-                "list1",
-                "list2"
-            ]
+            "level1": "complex",
+            "items": [
+                "Scurt istoric",
+                "Prezentarea facultatii",
+                "Avize si noutati",
+                "Acte normative",
+                "Studii",
+                "Decanat",
+                "Consiliul facultatii",
+                "Catedre",
+                "Laboratoare si centre"
+            ],
+            "header" : "Facultatea de Științe Reale, Economice şi ale Mediului",
+            "top-margin" : "-20px"
         },
+        {
+            "level1": "complex",
+            "items": [
+                "Scurt istoric",
+                "Avize si noutati",
+                "Acte normative",
+                "Studii",
+                "Decanat",
+                "Consiliul facultatii",
+                "Catedre",
+                "Oferta academica",
+                "Decanat studentesc"
+            ],
+            "header" : "Facultatea de Ştiințe ale Educației, Psihologie şi Arte",
+            "top-margin" : "-20px"
+        },
+        {
+        "level1": "complex",
+        "items": [
+            "Avize si noutati",
+            "Acte normative",
+            "Studii",
+            "Decanat",
+            "Consiliul facultatii",
+            "Catedre",
+            "Oferta Educationala",
+            "Admitere 2020",
+            "Laboratoare",
+            "Clinica Juridica"
+        ],
+        "header" : "Facultatea de Drept şi Ştiinţe Sociale",
+        "top-margin" : "-20px"
+        }
+            ]},
+        {
+            "menu": "Subdeviziuni",
+            "items": [
+                "BIBLIOTECA",
+                "Departamente",
+                "Studii",
+                "Decanat",
+                "Consiliul facultatii",
+                "Catedre",
+                "Oferta Educationala",
+                "Admitere 2020",
+                "Laboratoare",
+                "Clinica Juridica"
+            ],
+            "header" : "Subdeviziuni",
+            "top-margin" : "-20px"
+            },
         {
             "img": "/assets/img/phone.png",
             "text":"+373 231 52430",
