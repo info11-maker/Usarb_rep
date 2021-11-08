@@ -1,11 +1,10 @@
-/*________________________________*/
-/* HEADER */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*menu 1*/
 .topheader {
     background-color: #ffffff;
     color: #4f5255;
     font-size: 15px;
 }
-
 .topheader>ul {
     list-style: none;
 }
@@ -15,12 +14,16 @@
     padding: 0.5rem 1rem;
     font-family: 'Montserrat', sans-serif;
 }
-
+.fa-bars{
+    padding: 0 10px;
+}
 .topsr {
     background-color: #E5E5E5;
     margin-bottom: 20px;
 }
-
+#logousarb{
+    margin-left: 5px;
+}
 .csrt {
     font-family: 'Montserrat', sans-serif;
     color: #585858;
@@ -33,14 +36,33 @@
       display: block;
     }
   }
+/*menu items*/
+.level1 a{
+    display: block;
+    margin-left: 20px;
+    margin-top: -20px;
+    text-align:left;
+    text-indent: -2em;
+}
+.dropbtn{
+    margin-left: 180px;
+    padding: 0 18px;
+}
+.dropdown .is-dropdown-submenu a {
+    margin-top: -40px;
+    line-height: 30px;
+}
+.is-dropdown-submenu{
+    width: 250px;
+}
 
-/*____________________________________________*/
-
+/*mainphoto*/
 .usarbphoto{
     margin-top:-5px;
     width: 100%;
     height: auto;
 }
+/*search bar*/
 form input[type=text]{
     border-radius: 15px;
     width: 450px;
@@ -61,6 +83,7 @@ form button {
     color: rgb(96, 97, 100);
 
 }
+/*Canvas menu*/
 #offCanvas{
     margin-top: 150px;
     width: 1410px;
@@ -69,6 +92,7 @@ form button {
 .btn-menu{
     padding-top: 20px;
     width: 150px;
+    margin-left: -20px;
 }
 .menu-vertical{
 font-family: 'Montserrat', sans-serif;
@@ -76,78 +100,65 @@ list-style: none;
 padding: 25px;
 line-height: 3;
 }
-
 .vertline {
     border-left: 2px solid rgb(96, 100, 96);
     height: 590px;
     margin-left: 200px;
     margin-top:-350px;
   }
-#logousarb{
-    margin-left: 5px;
+
+/*section1*/
+.line {
+    border-left: 2px solid rgb(96, 100, 96);
+    height: 20px;
+    margin-left: 130px;
+    margin-top:-22px;
+  }
+.text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-left: 135px;
+    margin-top: 15px;
+    color: rgb(49, 47, 47);
 }
 .card{
-    margin-top: 30px;
+    margin-top: 20px;
 }
-
-.level1 a{
-    display: block;
-    margin-left: 20px;
-    margin-top: -20px;
-    text-align:left;
-    text-indent: -2em;
+.card img{
+    width: 400px;
+    height: 250px;
 }
-.dropbtn{
-    margin-left: 180px;
-    padding: 0 18px;
+.card-section{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    width: 380px; 
 }
-.dropdown .is-dropdown-submenu a {
-    margin-top: -40px;
-    line-height: 30px;
+.card p{
+    word-wrap: break-word;
 }
-.is-dropdown-submenu{
-    width: 250px;
+.fa-arrow-right{
+    margin-left: 240px;
 }
-  
-/*#header {
-    padding: 10px 0;
-    @include breakpoint(small down) {
-    padding: 0;
+h6{
+    font-family: 'Montserrat', sans-serif;
 }
-    .columns {
-    @include breakpoint(small down) {
-    padding: 0;
+.cards {
+    display: flex;
+}
+.card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 3px 3px 12px 2px rgba(black, 0.6);
+    transition: 0.2s;
+}
+.card:not(:first-child) {
+    margin-left: -2rem;
+}
+.card:not(:last-child):hover,
+.card:not(:last-child):focus-within {
+transform: translateY(-1rem);
+~ .card {
+    transform: translateX(2rem);
     }
-}
-
-.header-logo{
-    width: 15px;
-    margin-right: 10px;
-}
-li{
-    color:none;
-}
-.top-bar {
-    background: none;
-    padding: 0;
-  
-    @include breakpoint(small down) {
-    padding: 20px 0;
-}
-    ul {
-    background: none;
-}
-    a {
-    color: $black;
-    @include breakpoint(small down) { 
-    padding: 0 10px;
-}   
-    &:hover {
-    color: $primary-color;
-        }
-      }
-    }
-}
-li{
-    float: left;
-}*/
+  }
