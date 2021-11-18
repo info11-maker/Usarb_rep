@@ -3,21 +3,101 @@
   <button class="close-button" aria-label="Close menu" type="button" data-close>
     <span aria-hidden="true">&times;</span>
   </button>
-   <!--Your menu or Off-canvas content goes here -->
-<ul class="menu-vertical">
-  
-    <li><a href="#">Cercetare</a></li>
-    <li><a href="#">International</a></li>
-    <li><a href="#">Studenti</a></li>
-    <li><a href="#">Admitere</a></li>
-    <li><a href="#">Functii vacante</a></li>
-    <li><a href="#">Contacte</a></li>
-  </ul>
-  <div class="vertline"></div></div>
+  {{#each contact.canvas}}
+      <ul id="menu-vertical" >
+      {{#if this.canvaitem}}
+
+       <a href="#" class="menuIt" id={{this.id}}>{{this.canvaitem}}</a> 
+      </ul>
+      {{/if}}
+    {{/each}}
+  <div class="vertline"></div>
+  <div id="container-1">
+    <div id="box-1" class="boxes">
+      <li><a href="#" class="mainItem">Avize şi noutăți</a></li>
+    </div>
+    <div id="box-2" class="boxes">
+      <li><a href="#" class="mainItem">Cercetare şi inovare</a></li>
+        <ul>
+          <li><a href="#" class="secondaryItem">Structuri</a></li>
+          <li><a href="#" class="secondaryItem">Programare</a></li>
+          <li><a href="#" class="secondaryItem"> Planificare</a></li>
+      </ul>
+    </div>
+    <div id="box-3" class="boxes">
+      <li><a href="#" class="mainItem">Studii de doctorat</a></li>
+        <ul>
+          <li><a href="#" class="secondaryItem">Consiliul ştiințific </a></li>
+          <li><a href="#" class="secondaryItem">Şcoli doctorale/ Consorții</a></li>
+          <li><a href="#" class="secondaryItem">Conducatori de doctorat</a></li>
+          <li><a href="#" class="secondaryItem">Seminarele stiințifice de profil</a></li>
+          <li><a href="#" class="secondaryItem">Procesul de studii</a></li>
+      </ul>
+  </div>
+  </div>
+
+  <div id="container-2">
+    <div id="box-4" class="boxes">
+      <li><a href="#" class="mainItem">Manifestari ştiințifice</a></li>
+    </div> 
+    <div id="box-6" class="boxes">
+      <li><a href="#" class="mainItem">Publicatii USARB</a></li>
+      <ul>
+        <li><a href="#" class="secondaryItem">Reviste</a></li>
+     </ul>
+  </div>
+  <div id="box-5" class="boxes">
+    <li><a href="#" class="mainItem">Conducatori de doctorat</a></li>
+  </div>
+</div>
+
+<div id="container-3">
+  <div id="box-7" class="boxes">
+    <li><a href="#" class="mainItem">Premiile Senatului</a></li>
+  </div>
+  <div id="box-8" class="boxes">
+    <li><a href="#" class="mainItem">Open Reasearch</a></li>
+  </div>
+  <div id="box-9" class="boxes">
+    <li><a href="#" class="mainItem">EURAXESS</a></li>
+  </div>
+</div>
+<div id="container-4">
+  <div id="box-10" class="boxes">
+    <li><a href="#" class="mainItem">Prezentare</a></li>
+      <ul>
+        <li><a href="#" class="secondaryItem">Misiune</a></li>
+      </ul>
+  </div>
+  <div id="box-11" class="boxes">
+    <li><a href="#" class="mainItem">Colaborari</a></li>
+  </div>
+  <div id="box-12" class="boxes">
+    <li><a href="#" class="mainItem">Centre internaționale</a></li>
+  </div>
+  <div id="box-14" class="boxes">
+    <li><a href="#" class="mainItem">Programe europene</a></li>
+  </div>
+</div>
+<div id="container-5">
+  <div id="box-14" class="boxes">
+    <li><a href="#" class="mainItem">Link-uri utile</a></li>
+  </div>
+  <div id="box-15" class="boxes">
+    <li><a href="#" class="mainItem">Internationals Students</a></li>
+  </div>
+  <div id="box-16" class="boxes">
+    <li><a href="#" class="mainItem">Proiecte Internaționale</a></li>
+  </div>
+  <div id="box-17" class="boxes">
+    <li><a href="#" class="mainItem">International Site</a></li>
+  </div>
+</div>
+</div>
 <div class="off-canvas-content" data-off-canvas-content>
 
 <!-----Section noutati si comunitate------->
-  <a href=""><div class="text">Noutăți și comunitate </div>
+  <a href="news.html"><div class="text">Noutăți și comunitate </div>
   <div class="line"></div></a>
   <div class="grid-container">
     <div class="grid-x grid-margin-x small-up-2 medium-up-3">
@@ -50,7 +130,6 @@
       </div>
     </div>
   </div>
-
   <!-----Avize------->
   <a href=""><div class="text">Avize</div>
     <div class="line"></div></a>
@@ -76,387 +155,4 @@
     <img src="assets/img/aviz.jpg">
   </div>
 </div>
-
-
- <!-- <li>
-    <a href="#">Despre</a>
-    <ul>
-      <li>
-        <a href="#">Despre Universitate</a>
-        <ul>
-          <li><a href="#">Mesajul rectorului</a></li>
-          <li><a href="#">Istoria</a></li>
-          <li><a href="#">Organigrama</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Structuri Universitare</a>
-        <ul>
-          <li><a href="#">Administratia</a></li>
-          <li>
-            <a href="#">Senat</a>
-            <ul>
-              <li><a href="#">Componenta Senatului</a></li>
-              <li><a href="#">Comisiile Senatului</a></li>
-              <li><a href="#">Deciziile</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Consiliu pentru Dezvolare Strategica Institutionala</a>
-            <ul>
-              <li><a href="#">Membri</a></li>
-              <li><a href="#">Acte Normative</a></li>
-              <li><a href="#">Noutati</a></li>
-              <li><a href="#">Evenimente planificate</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Consiliul stiintific</a>
-            <ul>
-              <li><a href="#">Membri</a></li>
-              <li><a href="#">Acte emise</a></li>
-              <li><a href="#">Evenimente</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Consiliul calitatii</a>
-            <ul>
-              <li><a href="#">Componenta nominala a Consiliului calitatii</a></li>
-              <li><a href="#">Program de activitate</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Acte normative</a>
-        <ul>
-          <li><a href="#">Acte normative cu aplicabilitate interna</a></li>
-          <li><a href="#">Acte normative cu aplicabilitate nationala</a></li>
-          <li><a href="#">Acte Europene</a></li>
-
-        </ul>
-      </li>
-      <li><a href="#">Achizitii publice</a></li>
-      <li>
-        <a href="#">Rapoarte</a>
-        <ul>
-          <li><a href="#">Situatii financiare</a></li>
-          <li><a href="#">Rapoarte de activitate</a></li>
-          <li><a href="#">Raportul anual CIM</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Deplasari de serviciu in strainatate</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#">Studii</a>
-    <ul>
-      <li>
-        <a href="#">Programul procesului de invatamant</a>
-        <ul>
-          <li><a href="#">Programul procesului de învățământ pentru anul universitar 2021-2022, ciclul I, II și III (studii superioare de licență, master, doctorat), învățământ cu frecvență (termeni generali)</a></li>
-          <li><a href="#">Programul procesului de învățământ pentru anul universitar 2021-2022, ciclul I și III (studii superioare de licență, doctorat), învățământ cu frecvență redusă</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Absolventi</a>
-        <ul>
-          <li><a href="#">Informare</a></li>
-          <li><a href="#">Repartizarea absolvenților programelor de studii acreditate în domeniul Educație/Științe ale educației</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Licenta</a>
-        <ul>
-          <li>
-            <a href="#">Invatamant cu frecventa</a>
-            <ul>
-              <li><a href="#">Programe de licenta</a></li>
-              <li><a href="#">Sesiune si grafice</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Invatamant cu frecventa redusa</a>
-            <ul>
-              <li><a href="#">Programe de frecventa redusa</a></li>
-              <li><a href="#">Sesiune si grafice</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Master</a>
-        <ul>
-          <li><a href="#">Programe de master</a></li>
-          <li><a href="#">Sesiune si grafice</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Doctorat</a>
-        <ul>
-          <li>
-            <a href="#">Consiliul stiintific</a>
-            <ul>
-              <li><a href="#">Acte emise</a></li>
-              <li><a href="#">Evenimente</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Scoli doctorate/ Consortii</a></li>
-          <li><a href="#">Conducatori de doctorat</a></li>
-          <li><a href="#">Seminarele stiintifice de profil</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Centre</a>
-        <ul>
-          <li><a href="#">Centrul Activitate didactica</a></li>
-          <li><a href="#">Centrul de formare profesionala continua</a></li>
-          <li><a href="#">Centrul de ghidare in cariera si relatii cu piata muncii </a></li>
-        </ul>
-      </li>
-      <li><a href="#">Servicii de arhiva</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#">Facultati</a>
-    <ul>
-      <li>
-        <a href="#">Facultatea de litere</a>
-        <ul>
-          <li><a href="#">Admitere 2020</a></li>
-          <li><a href="#">Avize si noutati</a></li>
-          <li><a href="#">Acte normative</a></li>
-          <li><a href="#">Studii</a></li>
-          <li><a href="#">Decanat</a></li>
-          <li><a href="#">Catedre</a></li>
-          <li><a href="#">Centre</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Facultatea de Stiinte Reale, Economice si ale Mediului</a>
-        <ul>
-          <li><a href="#">Scurt istoric</a></li>
-          <li><a href="#">Prezentarea facultatii</a></li>
-          <li><a href="#">Avize si noutati</a></li>
-          <li><a href="#">Acte normative</a></li>
-          <li><a href="#">Studii</a></li>
-          <li><a href="#">Decanat</a></li>
-          <li><a href="#">Consiliul facultatii</a></li>
-          <li><a href="#">Catedre</a></li>
-          <li><a href="#">Laboratoare si centre</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Facultatea de Stiinte ale Educatiei, Psihologice si Arte</a>
-        <ul>
-          <li><a href="#">Scurt istoric</a></li>
-          <li><a href="#">Avize si noutati</a></li>
-          <li><a href="#">Acte normative</a></li>
-          <li><a href="#">Studii</a></li>
-          <li><a href="#">Decanat</a></li>
-          <li><a href="#">Consiliul facultatii</a></li>
-          <li><a href="#">Catedre</a></li>
-          <li><a href="#">Oferta academica</a></li>
-          <li><a href="#">Decanul studentesc</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Facultatea de Drept si Stiinte Sociale</a>
-        <ul>
-          <li><a href="#">Avize si noutati</a></li>
-          <li><a href="#">Acte normative</a></li>
-          <li><a href="#">Studii</a></li>
-          <li><a href="#">Decanat</a></li>
-          <li><a href="#">Consiliul facultatii</a></li>
-          <li><a href="#">Catedre</a></li>
-          <li><a href="#">Oferta Educationala</a></li>
-          <li><a href="#">Admitere 2020</a></li>
-          <li><a href="#">LAboratoare</a></li>
-          <li><a href="#">Clinica Juridica</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <a href="#">Subdiviziuni</a>
-    <ul>
-      <li><a href="#">BIBLIOTECA</a></li>
-      <li>
-        <a href="#">Departamente</a>
-        <ul>
-          <li>
-            <a href="#">Departamentul activitatea didactica</a>
-            <ul>
-              <li><a href="#">Sectia educatie, cultura si viata studenteasca</a></li>
-              <li><a href="#">Masterat</a></li>
-              <li><a href="#">Stagii de pratica</a></li>
-              <li><a href="#">Frecventa redusa</a></li>
-              <li><a href="#">Centrul de formare profesionala continua</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Departamenul de management al calitatii</a>
-            <ul>
-              <li><a href="#">Politica Universitatii de Stat "Alecu Russo" din Balti in domeniul calitatii</a></li>
-              <li><a href="#">Regulamente</a></li>
-              <li><a href="#"></a>Ordine si dispozitii cu aplicabilitate nationala</li>
-              <li><a href="#"></a>Audit intern</li>
-              <li><a href="#">Evaluare externa si acreditare</a></li>
-              <li><a href="#">Certificate</a></li>
-              <li><a href="#">Colaboratorii Departamenutului de management al calitatii</a></li>
-              <li><a href="#"></a>Plan de activitate a DMC</li>
-              <li><a href="#"></a>Comisiile de evaluare si aisgurarea a calitatii ale Facultatilor</li>
-              <li><a href="#">Avize, dispozitii USARB</a></li>
-              <li><a href="#">Contacte</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Departamenul relatii internationale</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Directia Tehnologii Internationale</a>
-        <ul>
-          <li><a href="#">Despre</a></li>
-          <li><a href="#">Echipa</a></li>
-          <li><a href="#">Avize</a></li>
-          <li><a href="#">Modele de acte</a></li>
-          <li><a href="#">Contacte</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Filiala Academiei</a>
-        <ul>
-          <li><a href="#">Descriere</a></li>
-          <li><a href="#">Personal</a></li>
-          <li><a href="#">Activitati</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Serviciul resurse umane</a></li>
-      <li><a href="#">Comitetul sindical al lectorilor si colaborarilor</a></li>
-    </ul>
-  </li>
-  <li>
-    <a class="" href="#">Cercetare</a>
-    <ul>
-      <li><a href="#">Avize si noutati</a></li>
-      <li>
-        <a href="#">Cercetare si inovare</a>
-        <ul>
-          <li><a href="#">Structuri de cercetare</a></li>
-          <li><a href="#">Programe / proiecte de cercetare</a></li>
-          <li><a href="#">Planificare raportare</a></li>
-        </ul>
-      <li>
-        <a href="#">Studii de doctorat</a>
-        <ul>
-          <li>
-            <a href="#">Consiliul stiintific</a>
-            <ul>
-              <li><a href="#"></a>Evenimente Cercetare</li>
-            </ul>
-          </li>
-          <li><a href="#">Scoli doctorale/ Consortii</a></li>
-          <li><a href="#">Conducatori de doctorat</a></li>
-          <li><a href="#">Seminare stiintifice de profil</a></li>
-          <li><a href="#">Procesul de studii</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Manifestari stiintifice</a></li>
-      <li><a href="#">Conducatori de doctorat</a></li>
-      <li>
-        <a href="#">Publicatii USARB</a>
-        <ul>
-          <li><a href="#">Reviste</a></li>
-        </ul>
-      </li>
-      <li><a href="#"></a>Premiile senatului USRAB</li>
-      <li><a href="#">Open Research Archive - ORA USARB</a></li>
-      <li><a href="#">EURAXESS</a></li>
-    </ul>
-</li>
-  <li>
-    <a href="#">International</a>
-    <ul>
-      <li>
-        <a href="#">Prezentare</a>
-        <ul>
-          <li><a href="#">Misiune</a></li>
-          <li><a href="#"></a>Strategie</li>
-          <li><a href="#"></a>Echipa de lucru</li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Colaborari</a>
-        <ul>
-          <li><a href="#"></a>Acorduri de colaborare</li>
-          <li><a href="#"></a>Afilieri</li>
-        </ul>
-      </li>
-      <li><a href="#">Centre internationale</a></li>
-      <li><a href="#">Programe europene</a></li>
-      <li><a href="#">Link-uri utile</a></li>
-      <li><a href="#">International students</a></li>
-      <li>
-        <a href="#">Proiecte internationale</a>
-        <ul>
-          <li><a href="#">Proiecte ERASMUS +, selectia 2015</a></li>
-          <li><a href="#">Proiecte ERASMUS +, selectia 2016</a></li>
-          <li><a href="#">Proiecte ERASMUS +, selectia 2017</a></li>
-          <li><a href="#">Proiecte ERASMUS +, selectia 2020</a></li>
-          <li><a href="#">Proiecte TEMPUS, selectia 2010-2013</a></li>
-          <li><a href="#">Proiecte ERASMUS MUNDUS, selectia 2011-2013</a></li>
-        </ul>
-      </li>
-      <li><a href="#">International site</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#">Studenti</a>
-    <ul>
-      <li>
-        <a href="#">Informatii</a>
-        <ul>
-          <li><a href="#">Acte normative</a></li>
-          <li><a href="#">Avize si noutati</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Asociatii studentesti</a>
-        <ul>
-          <li>
-            <a href="#">Autoguvernarea studenteasca</a>
-            <ul>
-              <li><a href="#">Revista Viata Studenteasca</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Comitetul sindical al studentilor</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Oportanitati si burse</a>
-        <ul>
-          <li><a href="#">Oportunitati de angajare</a></li>
-          <li><a href="#">Burse</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Camine</a></li>
-    </ul></li>
-  <li>
-    <a href="#">Admitere</a>
-    <ul>
-      <li><a href="#">Ciclul I, Licenta</a></li>
-      <li><a href="#">Ciclul II, Master</a></li>
-      <li><a href="#">Colegiul Pedagogic "Ion Creaga"</a></li>
-      <li><a href="#">Forum pentru candidatii la studii</a></li>
-    </ul>
-  </li>
-  <li>
-    <a href="#">Functii vacante</a>
-  </li>
-  <li>
-    <a href="#">Contacte</a>
-  </li>
-</ul>-->
 
