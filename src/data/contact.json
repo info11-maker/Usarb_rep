@@ -24,11 +24,11 @@
                 {
                     "level1": "complex",
                     "items": [
-                        "Administratia",
+                        "Administrația",
                         "Senat",
-                        "Consiliul pentru Dezvoltare Strategica Instutionala",
-                        "Consiliul stiintific",
-                        "Consiliul calitatii"
+                        "Consiliul pentru Dezvoltare Strategică Instuțională",
+                        "Consiliul stiințific",
+                        "Consiliul calitații"
                     ],
                     "header" : "Structuri Universitare",
                     "top-margin" : "-20px"
@@ -36,8 +36,8 @@
                 {
                     "level1": "complex",
                     "items": [
-                        "Acte normative cu aplicabilitate interna",
-                        "Acte normative cu aplicabilitate nationala",
+                        "Acte normative cu aplicabilitate internă",
+                        "Acte normative cu aplicabilitate națională",
                         "Acte Europene"
                     ],
                     "header" : "Acte normative",
@@ -45,13 +45,13 @@
                 },
                 {
                     "level1": "complex",
-                    "header" : "Achitizii publice",
+                    "header" : "Achițizii publice",
                     "top-margin" : "-20px"
                 },
                 {
                     "level1": "complex",
                     "items": [
-                        "Situatii financiare",
+                        "Situații financiare",
                         "Rapoarte de activitate",
                         "Raportul anual CIM"
                     ],
@@ -60,7 +60,7 @@
                 },
                 {
                     "level1" : "complex",
-                    "header" : "Deplasari de serviciu in strainatate",
+                    "header" : "Deplasari de serviciu in străinatate",
                     "top-margin" : "-20px"
                 }
         ]},
@@ -80,16 +80,16 @@
                     "items": [
                         "Informare",
                         "Repartizarea absolvenților programelor de studii acreditate în domeniul Educație/Științe ale educației"           ],
-                    "header" : "Absolventi",
+                    "header" : "Absolvenți",
                     "top-margin" : "-20px"
         },
         {
             "level1": "complex",
                     "items": [
-                        "Invatamant cu frecventa",
-                        "Invatamant cu frecventa redusa"           
+                        "Invătamant cu frecventă",
+                        "Invătamant cu frecventa redusă"           
                     ],
-                    "header" : "Licenta",
+                    "header" : "Licentă",
                     "top-margin" : "-20px"
         },
         {
@@ -104,10 +104,10 @@
         {
             "level1": "complex",
                     "items": [
-                        "Consiliul stiintific",
-                        "Scoli doctorale/ Consortii",
+                        "Consiliul stiințific",
+                        "Şcoli doctorale/ Consorții",
                         "Conducatori de doctorat",
-                        "Seminarele stiintifice de profil"           
+                        "Seminarele stiințifice de profil"           
                     ],
                     "header" : "Doctorat",
                     "top-margin" : "-20px"
@@ -115,28 +115,28 @@
         {
             "level1": "complex",
                     "items": [
-                        "Centrul Activitate didactica",
-                        "Centrul de formare profesionala continua",
-                        "Centrul de ghidare in cariera si relatii cu piata muncii"      
+                        "Centrul Activitate didactică",
+                        "Centrul de formare profesionala continuă",
+                        "Centrul de ghidare in cariera si relații cu piața muncii"      
                     ],
                     "header" : "Centre",
                     "top-margin" : "-20px"
         },
         {
             "level1": "simple",
-            "header" : "Servicii de arhiva",
+            "header" : "Servicii de arhivă",
             "top-margin" : "-20px"
         }
             
         ]},
         {
-            "menu": "Facultati",
+            "menu": "Facultăți",
             "items":[
                 {
                     "level1": "complex",
                     "items": [
                         "Admitere 2020",
-                        "Avize si noutati",
+                        "Avize şi noutăți",
                         "Acte normative",
                         "Studii",
                         "Decanat",
@@ -149,12 +149,12 @@
             "level1": "complex",
             "items": [
                 "Scurt istoric",
-                "Prezentarea facultatii",
-                "Avize si noutati",
+                "Prezentarea facultății",
+                "Avize si noutăți",
                 "Acte normative",
                 "Studii",
                 "Decanat",
-                "Consiliul facultatii",
+                "Consiliul facultății",
                 "Catedre",
                 "Laboratoare si centre"
             ],
@@ -165,14 +165,14 @@
             "level1": "complex",
             "items": [
                 "Scurt istoric",
-                "Avize si noutati",
+                "Avize şi noutăți",
                 "Acte normative",
                 "Studii",
                 "Decanat",
-                "Consiliul facultatii",
+                "Consiliul faculății",
                 "Catedre",
-                "Oferta academica",
-                "Decanat studentesc"
+                "Oferta academică",
+                "Decanat studențesc"
             ],
             "header" : "Facultatea de Ştiințe ale Educației, Psihologie şi Arte",
             "top-margin" : "-20px"
@@ -180,16 +180,16 @@
         {
         "level1": "complex",
         "items": [
-            "Avize si noutati",
+            "Avize şi noutăți",
             "Acte normative",
             "Studii",
             "Decanat",
-            "Consiliul facultatii",
+            "Consiliul facultății",
             "Catedre",
-            "Oferta Educationala",
+            "Oferta Educațională",
             "Admitere 2020",
             "Laboratoare",
-            "Clinica Juridica"
+            "Clinica Juridică"
         ],
         "header" : "Facultatea de Drept şi Ştiinţe Sociale",
         "top-margin" : "-20px"
@@ -202,12 +202,12 @@
                 "Departamente",
                 "Studii",
                 "Decanat",
-                "Consiliul facultatii",
+                "Consiliul facultății",
                 "Catedre",
-                "Oferta Educationala",
+                "Oferta Educațională",
                 "Admitere 2020",
                 "Laboratoare",
-                "Clinica Juridica"
+                "Clinica Juridică"
             ],
             "header" : "Subdeviziuni",
             "top-margin" : "-20px"
@@ -223,8 +223,38 @@
             "img": "/assets/img/email.png",
             "text": "anticamera@usarb.md",
             "width" : "18px",
-            "margin-top": "15px",
-            "margin": "3x"
+            "margin-top": "15px"
         }
+    ],
+    "canvas" : [
+        {
+            "canvaitem": "Cercetare",
+            "id" : "1"
+            
+        },
+
+        {
+            "canvaitem": "Internațional",
+            "id" : "2"
+            
+        },
+        {
+            "canvaitem": "Studenți",
+            "id" : "3"
+        
+        },
+        {
+            "canvaitem": "Admitere",
+            "id" : "4"
+        },
+        {
+            "canvaitem": "Funcții vacante",
+            "id" : "5"
+        },
+        {
+            "canvaitem": "Contacte",
+            "id" : "6"
+        }
+
     ]
 }
