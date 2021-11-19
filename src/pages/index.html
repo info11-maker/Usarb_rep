@@ -3,20 +3,98 @@
   <button class="close-button" aria-label="Close menu" type="button" data-close>
     <span aria-hidden="true">&times;</span>
   </button>
-  {{#each contact.canvas}}
-      <ul id="menu-vertical" >
-      {{#if this.canvaitem}}
+<div class="menu">
+    <nav class="nav-main">
+      <div class="nav-container">
+        <ul>
+           <li><a href="#">Cercetare</a>
+            <ul>
+              <li><a href="#" class="back">Main Menu</a></li>
+              <li class="nav-label"><strong>Avize şi noutăți</strong></li>
+              <li class="nav-label"><strong>Cercetare şi inovare</strong></li>
+              <li><a href="">Structuri</a></li>
+              <li><a href="">Programare</a></li>
+              <li><a href="">Planificare</a></li>
+              <li class="nav-label"><strong>Studii de doctorat</strong></li>
+              <li><a href="">Consiliul ştiințific</a></li>
+              <li><a href="">Şcoli doctorale/ Consorții</a></li>
+              <li><a href="">Conducatori de doctorat</a></li>
+              <li><a href="">Seminarele stiințifice de profil</a></li>
+              <li><a href="">Procesul de studii</a></li>
+              <li class="nav-label"><strong>Manifestari ştiințifice</strong></li>
+              <li class="nav-label"><strong>Publicatii USARB</strong></li>
+              <li><a href="">Reviste</a></li>
+              <li class="nav-label"><strong>Conducatori de doctorat</strong></li>
+              <li class="nav-label"><strong>Premiile Senatului</strong></li>
+              <li class="nav-label"><strong>Open Reasearch</strong></li>
+              <li class="nav-label"><strong>EURAXESS</strong></li>
+              </ul>
+          </li>
+          <li><a href="#">Internațional</a>
+            <ul>
+              <li><a href="#" class="back">Main Menu</a></li>
+              <li class="nav-label"><strong>Prezentare</strong></li>
+              <li><a href="">Misiune</a></li>
+              <li><a href="">Strategie</a></li>
+              <li><a href="">Echipa de lucru</a></li>
+              <li class="nav-label"><strong>Colaborari</strong></li>
+              <li><a href="">Acorduri de colaborări</a></li>
+              <li><a href="">Afilieri</a></li>
+              <li class="nav-label"><strong>Centre internaționale</strong></li>
+              <li class="nav-label"><strong>Programe europene</strong></li>
+              <li class="nav-label"><strong>Link-uri utile</strong></li>
+              <li class="nav-label"><strong>Proiecte Internaționale</strong></li>
+              <li class="nav-label"><strong>International Site</strong></li>
+              </ul>
+          </li>
 
+          <li> <a href="#">Studenți</a>
+            <ul> 
+              <li><a href="#" class="back">Main Menu</a></li>
+              <li class="nav-label"><strong>Informații</strong></li>
+              <li><a href="">Acte normative</a></li>
+              <li><a href="">Avize şi Noutăți</a></li>
+              <li class="nav-label"><strong>Asociații studențeşti</strong></li>
+              <li><a href="">Autoguvernarea Studențească</a></li>
+              <li><a href="">Comitetul sindical al studenților</a></li>
+              <li class="nav-label"><strong>Oportunități şi burse</strong></li>
+              <li><a href="">Oportunități şi burse</a></li>
+              <li><a href="">Burse</a></li>
+              <li class="nav-label"><strong>Cămine</strong></li>
+            </ul>
+          </li>
+          <li><a href="#">Admitere 2021</a>
+            <ul>
+            <li><a href="#" class="back">Main Menu</a></li>
+            <li class="nav-label"><strong>Ciclu I, Licență</strong></li>
+            <li class="nav-label"><strong>Ciclu II, Master</strong></li>
+            <li class="nav-label"><strong>Colegiul Pedagocic „Ion Creangă”</strong></li>
+            <li class="nav-label"><strong>Forum pentru canditații la studii</strong></li>
+          </ul>
+          </li>
+          <li><a href="#">Funcții vacante</a></li>
+          <li><a href="#">Contacte</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+  <div class="off-canvas-content" data-off-canvas-content>
+<!--<button class="button-nav-toggle"><span class="icon">&#9776;</span> <a href="https://www.jqueryscript.net/menu/">Menu</a></button>-->
+  
+  <!--{{#each contact.canvas}}
+      <ul id="menu-vertical">
+      {{#if this.canvaitem}}
        <a href="#" class="menuIt" id={{this.id}}>{{this.canvaitem}}</a> 
       </ul>
       {{/if}}
     {{/each}}
   <div class="vertline"></div>
-  <div id="container-1">
-    <div id="box-1" class="boxes">
+  <div id="container-1" class="boxes">
+    <div id="box-1" >
       <li><a href="#" class="mainItem">Avize şi noutăți</a></li>
     </div>
-    <div id="box-2" class="boxes">
+    <div id="box-2">
       <li><a href="#" class="mainItem">Cercetare şi inovare</a></li>
         <ul>
           <li><a href="#" class="secondaryItem">Structuri</a></li>
@@ -24,7 +102,7 @@
           <li><a href="#" class="secondaryItem"> Planificare</a></li>
       </ul>
     </div>
-    <div id="box-3" class="boxes">
+    <div id="box-3">
       <li><a href="#" class="mainItem">Studii de doctorat</a></li>
         <ul>
           <li><a href="#" class="secondaryItem">Consiliul ştiințific </a></li>
@@ -36,67 +114,99 @@
   </div>
   </div>
 
-  <div id="container-2">
-    <div id="box-4" class="boxes">
+  <div id="container-2" class="boxes">
+    <div id="box-4" >
       <li><a href="#" class="mainItem">Manifestari ştiințifice</a></li>
     </div> 
-    <div id="box-6" class="boxes">
+    <div id="box-6" >
       <li><a href="#" class="mainItem">Publicatii USARB</a></li>
       <ul>
         <li><a href="#" class="secondaryItem">Reviste</a></li>
      </ul>
   </div>
-  <div id="box-5" class="boxes">
+  <div id="box-5">
     <li><a href="#" class="mainItem">Conducatori de doctorat</a></li>
   </div>
 </div>
 
-<div id="container-3">
-  <div id="box-7" class="boxes">
+<div id="container-3" class="boxes">
+  <div id="box-7" >
     <li><a href="#" class="mainItem">Premiile Senatului</a></li>
   </div>
-  <div id="box-8" class="boxes">
+  <div id="box-8">
     <li><a href="#" class="mainItem">Open Reasearch</a></li>
   </div>
-  <div id="box-9" class="boxes">
+  <div id="box-9">
     <li><a href="#" class="mainItem">EURAXESS</a></li>
   </div>
 </div>
-<div id="container-4">
-  <div id="box-10" class="boxes">
+<div id="container-4" class="boxes">
+  <div id="box-10">
     <li><a href="#" class="mainItem">Prezentare</a></li>
       <ul>
         <li><a href="#" class="secondaryItem">Misiune</a></li>
+        <li><a href="#" class="secondaryItem">Strategie</a></li>
+        <li><a href="#" class="secondaryItem">Echipa de lucru</a></li>
       </ul>
   </div>
-  <div id="box-11" class="boxes">
-    <li><a href="#" class="mainItem">Colaborari</a></li>
+  <div id="box-11">
+    <li><a href="#" class="mainItem">Colaborări</a></li>
+    <ul>
+      <li><a href="#" class="secondaryItem">Acorduri de colaborări</a></li>
+      <li><a href="#" class="secondaryItem">Afilieri</a></li>
+      </ul>
   </div>
-  <div id="box-12" class="boxes">
+  <div id="box-12">
     <li><a href="#" class="mainItem">Centre internaționale</a></li>
   </div>
-  <div id="box-14" class="boxes">
+  <div id="box-14">
     <li><a href="#" class="mainItem">Programe europene</a></li>
   </div>
 </div>
-<div id="container-5">
-  <div id="box-14" class="boxes">
+<div id="container-5" class="boxes">
+  <div id="box-14">
     <li><a href="#" class="mainItem">Link-uri utile</a></li>
   </div>
-  <div id="box-15" class="boxes">
+  <div id="box-15">
     <li><a href="#" class="mainItem">Internationals Students</a></li>
   </div>
-  <div id="box-16" class="boxes">
+  <div id="box-16">
     <li><a href="#" class="mainItem">Proiecte Internaționale</a></li>
   </div>
-  <div id="box-17" class="boxes">
+  <div id="box-17">
     <li><a href="#" class="mainItem">International Site</a></li>
   </div>
 </div>
+<div id="container-6" class="boxes">
+  <div id="box-18" >
+    <li><a href="#" class="mainItem">Informatii</a></li>
+    <ul>
+      <li><a href="#" class="secondaryItem">Acte normative</a></li>
+      <li><a href="#" class="secondaryItem">Avize şi noutăți</a></li>
+    </ul>
+  </div>
+  <div id="box-19" >
+    <li><a href="#" class="mainItem">Asociații studențeşti</a></li>
+    <ul>
+      <li><a href="#" class="secondaryItem">Autoguvernarea Studențească</a></li>
+      <li><a href="#" class="secondaryItem">Comitetul sindical al studenților</a></li>
+    </ul>
+  </div>
+  <div id="box-20">
+    <li><a href="#" class="mainItem">Oportunități şi burse</a></li>
+    <ul>
+      <li><a href="#" class="secondaryItem">Oportunități de angajare</a></li>
+      <li><a href="#" class="secondaryItem">Burse</a></li>
+    </ul>
+  </div>
+  <div id="box-21">
+    <li><a href="#" class="mainItem">Camine</a></li>
+  </div>
 </div>
-<div class="off-canvas-content" data-off-canvas-content>
+</div>
+<div class="off-canvas-content" data-off-canvas-content>-->
 
-<!-----Section noutati si comunitate------->
+<!--Section noutati si comunitate-->
   <a href="news.html"><div class="text">Noutăți și comunitate </div>
   <div class="line"></div></a>
   <div class="grid-container">
