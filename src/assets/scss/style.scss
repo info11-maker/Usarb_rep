@@ -414,6 +414,7 @@ margin-bottom:20px;
 
    }
 }
+/*Of canvas*/
 .nav-main {
     transition: right .25s ease-in-out;
     position: fixed;
@@ -506,15 +507,61 @@ margin-bottom:20px;
     color: #3d6348;
     margin-left: 90px;
 }
+/*pagina programe-proiecte-de-cercetare*/
+.table-text{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 35px;
+}
+.table-content{ 
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 35px;
+
+}
 .table-page{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 45px;
+}
+.table-text-margin{
+  padding-top: 30px;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 35px;
+
+}
+table{
+    margin-top: 30px;
+}
+.table-section3{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20%;
+    text-align: center;
+}
+.table-content-1{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
-table p{
-    margin-right: 30px;
-}
-.td-elem{
+.header-text{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
     text-align: center;
+    color: #0a0a0a;
+}
+.accordion{
+    width: 1000px;
+   padding-left: 130px;
+}
+/*.accordion, .acordion-2{
+    width: 850px;
+    padding-left: 30px;
+}*/
+.table-content-2{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    vertical-align: 10px;
+    font-size: 14px;
+}
+.table-page-1{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 85px;
 }
 /*
 .navigation {
